@@ -1,0 +1,32 @@
+
+.news {
+
+    width: 1500px;
+    text-align: left;
+    background-color: rgb(159, 228, 202);
+    padding:30px;
+    font-size: 25px;
+    font-style: italic;
+  
+}
+.cats {
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 50px;
+
+}
+.image-cats{
+    width: 500px;
+    height: 380px;
+}
+.text-news{
+    padding: 30px;
+}
+.wrapper-cats{
+    display: flex;
+    gap: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+
+}
