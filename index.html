@@ -11,364 +11,392 @@
 </head>
 
 <body>
-  
+
     <div class="wrapper">
-    <button id = "buttonColor" style="width: 125px; height: 45px; background-color: blueviolet">Начать цветомузыку</button>
-        
+        <button id="buttonColor" style="width: 125px; height: 45px; background-color: blueviolet">Начать
+            цветомузыку</button>
+
         <div class="header header-main">
 
             <button id="login" style="width: 125px; height: 45px; background-color: rgb(43, 226, 67)">login</button>
-        <p id="userlogin" style="display: none; z-index: 8;">Svetlana</p>
-    <!-- <div class="wrapper"> -->
-        <div class="header header-main">
-            <div class="container">
-                <div class="header__inner">
-                    <a href="index.html" class="logo">
-                        <img src="./images_trip/Logo-main.svg" alt="" class="logo__img">
-                    </a>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__list-item"><a href="#" class="menu__list-link">О компании</a>
-                            </li>
-                            <li class="menu__list-item"><a href="#programm" class="menu__list-link">Программа тура</a>
-                            </li>
-                            <li class="menu__list-item"><a href="#price" class="menu__list-link">Стоимость</a></li>
-                            <li class="menu__list-item"><a href="#blog-link" class="menu__list-link">Блог</a></li>
-                            <li class="menu__list-item"><a href="#contacts" class="menu__list-link">Контакты</a>
-                            <li class="menu__list-item list-item-news" ><a href=".//News/index.html" class="menu__list-link">Новости</a>
-
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <main class="main">
-            <section class="top">
+            <p id="userlogin" style="display: none; z-index: 8;">Svetlana</p>
+            <!-- <div class="wrapper"> -->
+            <div class="header header-main">
                 <div class="container">
-                    <h1 class="title" id="top">
-                        Насладись прогулкой в горах <br> с командой единомышленников
-                    </h1>
-                    <div class="form-wrap">
-                        <form action="" class="form-search">
-                            <div class="list-input">
-                                <input type="text" list="places" placeholder="Локация для тура"
-                                    class="input-point location">
-                                <datalist id="places">
-                                    <option value="Тибет"></option>
-                                    <option value="Домбай"></option>
-                                    <option value="Крым"></option>
-                                    <option value="Кавказ"></option>
-
-                                </datalist>
-                                <p>выберите из списка</p>
+                    <div class="header__inner">
+                        <a href="index.html" class="logo">
+                            <img src="./images_trip/Logo-main.svg" alt="" class="logo__img">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item"><a href="#" class="menu__list-link">О компании</a>
+                                </li>
+                                <li class="menu__list-item"><a href="#programm" class="menu__list-link">Программа
+                                        тура</a>
+                                </li>
+                                <li class="menu__list-item"><a href="#price" class="menu__list-link">Стоимость</a></li>
+                                <li class="menu__list-item"><a href="#blog-link" class="menu__list-link">Блог</a></li>
+                                <li class="menu__list-item"><a href="#contacts" class="menu__list-link">Контакты</a>
+                                <li class="menu__list-item list-item-news"><a href=".//News/index.html"
+                                        class="menu__list-link">Новости</a>
+                                <li class="menu__list-item list-item-login" ><button
+                                        id='openModalButton'>Вход в личный кабинет</button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div id='modal' class='modal'>
+                            <div class='modal-content'>
+                                <button id='closeModalButton' class='modal-close'>X</button>
+                                <h1>Авторизация</h1>
+                                <form id='loginForm' action="">
+                                    <label id='labelName' for="login">Имя</label>
+                                    <input type="text" name="login" required>
+                                    <label for="">Пароль</label>
+                                    <input type="password" name="password" required>
+                                    <button type="submit">Войти</button>
+                                </form>
                             </div>
-                            <div class="list-input">
-                                <input type="date" placeholder="Дата похода" class="input-point dates">
-                                <p>укажите дату</p>
-                            </div>
-                            <div class="list-input list-input-members" data-description="минимум 4 человека">
-                                <input type="text" list="members" placeholder="Участники" class="input-point members">
-                                <datalist id="members">
-                                    <option value="4-6"></option>
-                                    <option value="6-8"></option>
-                                    <option value="8-10"></option>
-                                    <option value="10-12"></option>
-
-                                </datalist>
-                                <!-- <p>минимум 4 человека</p> -->
-                            </div>
-                            <a href="#" class="top__button">
-                                Найти программу
-                            </a>
-                        </form>
-                    </div>
-
-
-                </div>
-
-
-            </section>
-            <div class="slider">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background-image: url(./images_trip/main-3\ vershina1.jpg);">
                         </div>
-                        <!-- стили и пути к контенту, который может менять заказчик или бэкендер, прописываются в html! -->
-                        <div class="swiper-slide" style="background-image: url(./images_trip/main-2.jpg);"></div>
-
-                        <div class="swiper-slide" style="background-image: url(./images_trip/Photo-main.jpg);"></div>
-
-                        <div class="swiper-slide" style="background-image: url(./images_trip/main-4.jpg);"></div>
-
                     </div>
-
-                    <div class="swiper-pagination"></div>
-                    <!-- пагинация — это постраничный вывод данных -->
                 </div>
             </div>
-            <section class="hike-about">
-                <div class="hike-images">
-                    <div class="image-first"></div>
-                    <div class="image-second"></div>
+            <main class="main">
+                <section class="top">
+                    <div class="container">
+                        <h1 class="title" id="top">
+                            Насладись прогулкой в горах <br> с командой единомышленников
+                        </h1>
+                        <div class="form-wrap">
+                            <form action="" class="form-search">
+                                <div class="list-input">
+                                    <input type="text" list="places" placeholder="Локация для тура"
+                                        class="input-point location">
+                                    <datalist id="places">
+                                        <option value="Тибет"></option>
+                                        <option value="Домбай"></option>
+                                        <option value="Крым"></option>
+                                        <option value="Кавказ"></option>
 
-                </div>
-                <div class="hike-about-text">
-                    <p class="pre-title">о нашем походе</p>
-                    <h2 class="title-about">Исследуйте все горные массивы <br>мира вместе с нами</h2>
-                    <p class="text-about">Зашлакованное жизнью в городе тело и набитая до отказа суетными мыслями голова
-                        требуют перезагрузки. Кристальная вода горных рек, морозный воздух горного утра и яркое солнце
-                        заснеженных вершин как нельзя лучше помогают восстановить баланс жизненных сил. Кроме этого, на
-                        высоте в организме вырабатываются эндорфины, поэтому горы — это действительно наркотик.
-                        Удивительно, но даже в наш век горы остаются дикими и нетронутыми, стоит только надеть рюкзак и
-                        встать на тропу!</p>
-                    <button class="black-button""><a href=" #programm">Программа тура</a></button>
-                </div>
-            </section>
-            <section class="best-programm">
-                <div class="hike-about-text">
-                    <p class="pre-title">наше предложение</p>
-                    <h2 class="title-about" id="programm">Лучшие программы для тебя</h2>
-                    <p class="text-about">Лучший формат горных походов - отрыв от цивилизации и digital detox в
-                        сочетании с хорошей физической нагрузкой и, конечно, общением с друзьями. Чтобы такие походы
-                        проходили в удовольствие, нужно держать себя в форме круглый год и тщательно готовить сами
-                        экспедиции.</p>
-                    <ul class="list-programm">
-                        <li class="items-list-programm guid">
-                            <div class="item-text">
-                                <h4>Опытный гид</h4>В походе группу сопровождает опытный гид, который выбирает
-                                максимально
-                                интересные и безопасные маршруты.
-                            </div>
-                        </li>
-                        <li class="items-list-programm hike">
-                            <div class="item-text">
-                                <h4>Безопасный поход</h4>Маршруты проверены и проложены надежно и безопасно. Рассчитаны
-                                на любой уровень подготовки.
-                            </div>
-                        </li>
-                        <li class="items-list-programm price">
-                            <div class="item-text">
-                                <h4>Лояльные цены</h4>Можно подобрать походы на разный бюджет. Для наших постоянных
-                                туристов существует система скидок.
-                            </div>
-                        </li>
-
-                    </ul>
-                    <button class="black-button"><a href="#price">Стоимость программ</a></button>
-                </div>
-                <div class="hike-about-images">
-                    <img src="./images_trip/Photo_1.jpg" alt="pic_1" class="hike-about-photo-1">
-                    <img src="./images_trip/Photo_2.jpg" alt="pic_2" class="hike-about-photo-2">
-                    <img src="./images_trip/Photo_3.jpg" alt="pic_3" class="hike-about-photo-2">
-                    <img src="./images_trip/Photo_4.jpg" alt="pic_4" class="hike-about-photo-1">
-
-                </div>
-            </section>
-            <section class="popular-tours">
-                <p class="pre-title pre-popular">по версии отдыхающих</p>
-                <h2 class="popular-tours-title">Популярные направления</h2>
-                <div class="popular-tours-images">
-                    <div class="popular-tours-cards">
-                        <div class="popular-tours-card" id="price">
-                            <img src="./images_trip/popular_tour.jpg" alt="pop-tour-img">
-                            <div class="pop-tours-card-text">
-                                <div class="card-descript">
-                                    <h3 class="pop-tours-card-title">Озеро возле гор</h3>
-                                    <p class="pop-tours-card-descript">романтическое приключение</p>
+                                    </datalist>
+                                    <p>выберите из списка</p>
                                 </div>
-                                <div class="card-price">
-                                    480$
+                                <div class="list-input">
+                                    <input type="date" placeholder="Дата похода" class="input-point dates">
+                                    <p>укажите дату</p>
+                                </div>
+                                <div class="list-input list-input-members" data-description="минимум 4 человека">
+                                    <input type="text" list="members" placeholder="Участники"
+                                        class="input-point members">
+                                    <datalist id="members">
+                                        <option value="4-6"></option>
+                                        <option value="6-8"></option>
+                                        <option value="8-10"></option>
+                                        <option value="10-12"></option>
+
+                                    </datalist>
+                                    <!-- <p>минимум 4 человека</p> -->
+                                </div>
+                                <a href="#" class="top__button">
+                                    Найти программу
+                                </a>
+                            </form>
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+                <div class="slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"
+                                style="background-image: url(./images_trip/main-3\ vershina1.jpg);">
+                            </div>
+                            <!-- стили и пути к контенту, который может менять заказчик или бэкендер, прописываются в html! -->
+                            <div class="swiper-slide" style="background-image: url(./images_trip/main-2.jpg);"></div>
+
+                            <div class="swiper-slide" style="background-image: url(./images_trip/Photo-main.jpg);">
+                            </div>
+
+                            <div class="swiper-slide" style="background-image: url(./images_trip/main-4.jpg);"></div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                        <!-- пагинация — это постраничный вывод данных -->
+                    </div>
+                </div>
+                <section class="hike-about">
+                    <div class="hike-images">
+                        <div class="image-first"></div>
+                        <div class="image-second"></div>
+
+                    </div>
+                    <div class="hike-about-text">
+                        <p class="pre-title">о нашем походе</p>
+                        <h2 class="title-about">Исследуйте все горные массивы <br>мира вместе с нами</h2>
+                        <p class="text-about">Зашлакованное жизнью в городе тело и набитая до отказа суетными мыслями
+                            голова
+                            требуют перезагрузки. Кристальная вода горных рек, морозный воздух горного утра и яркое
+                            солнце
+                            заснеженных вершин как нельзя лучше помогают восстановить баланс жизненных сил. Кроме этого,
+                            на
+                            высоте в организме вырабатываются эндорфины, поэтому горы — это действительно наркотик.
+                            Удивительно, но даже в наш век горы остаются дикими и нетронутыми, стоит только надеть
+                            рюкзак и
+                            встать на тропу!</p>
+                        <button class="black-button""><a href=" #programm">Программа тура</a></button>
+                    </div>
+                </section>
+                <section class="best-programm">
+                    <div class="hike-about-text">
+                        <p class="pre-title">наше предложение</p>
+                        <h2 class="title-about" id="programm">Лучшие программы для тебя</h2>
+                        <p class="text-about">Лучший формат горных походов - отрыв от цивилизации и digital detox в
+                            сочетании с хорошей физической нагрузкой и, конечно, общением с друзьями. Чтобы такие походы
+                            проходили в удовольствие, нужно держать себя в форме круглый год и тщательно готовить сами
+                            экспедиции.</p>
+                        <ul class="list-programm">
+                            <li class="items-list-programm guid">
+                                <div class="item-text">
+                                    <h4>Опытный гид</h4>В походе группу сопровождает опытный гид, который выбирает
+                                    максимально
+                                    интересные и безопасные маршруты.
+                                </div>
+                            </li>
+                            <li class="items-list-programm hike">
+                                <div class="item-text">
+                                    <h4>Безопасный поход</h4>Маршруты проверены и проложены надежно и безопасно.
+                                    Рассчитаны
+                                    на любой уровень подготовки.
+                                </div>
+                            </li>
+                            <li class="items-list-programm price">
+                                <div class="item-text">
+                                    <h4>Лояльные цены</h4>Можно подобрать походы на разный бюджет. Для наших постоянных
+                                    туристов существует система скидок.
+                                </div>
+                            </li>
+
+                        </ul>
+                        <button class="black-button"><a href="#price">Стоимость программ</a></button>
+                    </div>
+                    <div class="hike-about-images">
+                        <img src="./images_trip/Photo_1.jpg" alt="pic_1" class="hike-about-photo-1">
+                        <img src="./images_trip/Photo_2.jpg" alt="pic_2" class="hike-about-photo-2">
+                        <img src="./images_trip/Photo_3.jpg" alt="pic_3" class="hike-about-photo-2">
+                        <img src="./images_trip/Photo_4.jpg" alt="pic_4" class="hike-about-photo-1">
+
+                    </div>
+                </section>
+                <section class="popular-tours">
+                    <p class="pre-title pre-popular">по версии отдыхающих</p>
+                    <h2 class="popular-tours-title">Популярные направления</h2>
+                    <div class="popular-tours-images">
+                        <div class="popular-tours-cards">
+                            <div class="popular-tours-card" id="price">
+                                <img src="./images_trip/popular_tour.jpg" alt="pop-tour-img">
+                                <div class="pop-tours-card-text">
+                                    <div class="card-descript">
+                                        <h3 class="pop-tours-card-title">Озеро возле гор</h3>
+                                        <p class="pop-tours-card-descript">романтическое приключение</p>
+                                    </div>
+                                    <div class="card-price">
+                                        480$
+                                    </div>
+                                </div>
+                                <div class="rating"> <img src="./images_trip/рейтинг.jpg" alt="image"></div>
+                            </div>
+                            <div class="popular-tours-card">
+                                <img src="./images_trip/popular_tour (1).jpg" alt="pop-tour-img2">
+                                <div class="pop-tours-card-text">
+                                    <div class="card-descript">
+                                        <h3 class="pop-tours-card-title">Ночь в горах</h3>
+                                        <p class="pop-tours-card-descript">в душевной компании друзей</p>
+                                    </div>
+                                    <div class="card-price">
+                                        500$
+                                    </div>
+                                </div>
+                                <div class="rating"> <img src="./images_trip/рейтинг (1).jpg" alt="image"></div>
+
+                            </div>
+                            <div class="popular-tours-card">
+                                <img src="./images_trip/popular_tour (2).jpg" alt="pop-tour-img3">
+                                <div class="pop-tours-card-text">
+                                    <div class="card-descript">
+                                        <h3 class="pop-tours-card-title">Йога в горах</h3>
+                                        <p class="pop-tours-card-descript">для тех, кто заботится о себе</p>
+                                    </div>
+                                    <div class="card-price">
+                                        280$
+                                    </div>
+                                </div>
+                                <div class="rating"> <img src="./images_trip/рейтинг (2).jpg" alt="image"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="black-button">Рейтинг направлений</button>
+
+                </section>
+
+                <section class="wrap-blog">
+                    <p class="pre-title pre-popular">делимся впечатлениями</p>
+                    <h2 class="popular-tours-title">Блог о путешествиях</h2>
+                    <div class="blog" id="blog-link">
+                        <div class="blog-card">
+                            <div class="blog-card-img">
+                                <img src="./images_trip/Rectangle 19.jpg" alt="">
+                            </div>
+                            <div class="blog-card-text">
+                                <h3>Красивая Италия. Какая она в реальности?</h3>
+                                <p>Италия - южная, приветливая страна. Она
+                                    славится своими чудесными пляжами с восхитительным белым песком и лазурной водой.
+                                    Это
+                                    просто рай
+                                    для человека, который любит спокойный беззаботный отдых на морском побережье.</p>
+                                <div class="blog-card-info">
+                                    <p class="date">01/04/23</p>
+                                    <p class="reade">читать статью</p>
                                 </div>
                             </div>
-                            <div class="rating"> <img src="./images_trip/рейтинг.jpg" alt="image"></div>
                         </div>
-                        <div class="popular-tours-card">
-                            <img src="./images_trip/popular_tour (1).jpg" alt="pop-tour-img2">
-                            <div class="pop-tours-card-text">
-                                <div class="card-descript">
-                                    <h3 class="pop-tours-card-title">Ночь в горах</h3>
-                                    <p class="pop-tours-card-descript">в душевной компании друзей</p>
-                                </div>
-                                <div class="card-price">
-                                    500$
-                                </div>
+                        <div class="blog-card">
+                            <div class="blog-card-img">
+                                <img src="./images_trip/Rectangle 19 (2).jpg" alt="">
                             </div>
-                            <div class="rating"> <img src="./images_trip/рейтинг (1).jpg" alt="image"></div>
-
-                        </div>
-                        <div class="popular-tours-card">
-                            <img src="./images_trip/popular_tour (2).jpg" alt="pop-tour-img3">
-                            <div class="pop-tours-card-text">
-                                <div class="card-descript">
-                                    <h3 class="pop-tours-card-title">Йога в горах</h3>
-                                    <p class="pop-tours-card-descript">для тех, кто заботится о себе</p>
-                                </div>
-                                <div class="card-price">
-                                    280$
+                            <div class="blog-card-text">
+                                <h3>Долой сомненья! Весь мир открыт для вас!</h3>
+                                <p>Путешествуя, человек открывает свои возможности. Исследуя горы или равнины, наблюдая
+                                    жизнь
+                                    городов или
+                                    наслаждаясь морем, мы осознаем, как велик наш мир. Смена обстановки стимулирует
+                                    мозг, работу нервной системы.</p>
+                                <div class="blog-card-info">
+                                    <p class="date">01/05/23</p>
+                                    <p class="reade">читать статью</p>
                                 </div>
                             </div>
-                            <div class="rating"> <img src="./images_trip/рейтинг (2).jpg" alt="image"></div>
-
                         </div>
-
-                    </div>
-                </div>
-                <button class="black-button">Рейтинг направлений</button>
-
-            </section>
-
-            <section class="wrap-blog">
-                <p class="pre-title pre-popular">делимся впечатлениями</p>
-                <h2 class="popular-tours-title">Блог о путешествиях</h2>
-                <div class="blog" id="blog-link">
-                    <div class="blog-card">
-                        <div class="blog-card-img">
-                            <img src="./images_trip/Rectangle 19.jpg" alt="">
+                        <div class="blog-card">
+                            <div class="blog-card-img">
+                                <img src="./images_trip/Rectangle 19 (1).jpg" alt="">
+                            </div>
+                            <div class="blog-card-text">
+                                <h3>Как подготовиться к путешествию в одиночку?</h3>
+                                <p>Путешествие в одиночку. Скажете, что это скучно? Давайте поговорим об этом. В этой
+                                    статье
+                                    мы
+                                    рассмотрим самые распространенные вопросы, трудности и предубеждения одиночного
+                                    путешествия.</p>
+                                <div class="blog-card-info">
+                                    <p class="date">05/05/23</p>
+                                    <p class="reade">читать статью</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="blog-card-text">
-                            <h3>Красивая Италия. Какая она в реальности?</h3>
-                            <p>Италия - южная, приветливая страна. Она
-                                славится своими чудесными пляжами с восхитительным белым песком и лазурной водой. Это
-                                просто рай
-                                для человека, который любит спокойный беззаботный отдых на морском побережье.</p>
-                            <div class="blog-card-info">
-                                <p class="date">01/04/23</p>
-                                <p class="reade">читать статью</p>
+                        <div class="blog-card">
+                            <div class="blog-card-img">
+                                <img src="./images_trip/Rectangle 19 (3).jpg" alt="">
+                            </div>
+                            <div class="blog-card-text">
+                                <h3>Индия...летим?</h3>
+                                <p>Первая поездка в Индию, скорее всего, станет шоком даже для опытного путешественника.
+                                    Чтобы
+                                    смягчить столкновение
+                                    с экзотикой этой страны, можно обратиться к опыту ее бывалых исследователей.</p>
+                                <div class="blog-card-info">
+                                    <p class="date">09/06/23</p>
+                                    <p class="reade">читать статью</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="blog-card">
-                        <div class="blog-card-img">
-                            <img src="./images_trip/Rectangle 19 (2).jpg" alt="">
-                        </div>
-                        <div class="blog-card-text">
-                            <h3>Долой сомненья! Весь мир открыт для вас!</h3>
-                            <p>Путешествуя, человек открывает свои возможности. Исследуя горы или равнины, наблюдая
-                                жизнь
-                                городов или
-                                наслаждаясь морем, мы осознаем, как велик наш мир. Смена обстановки стимулирует
-                                мозг, работу нервной системы.</p>
-                            <div class="blog-card-info">
-                                <p class="date">01/05/23</p>
-                                <p class="reade">читать статью</p>
-                            </div>
-                        </div>
+                    <button class="black-button">Другие материалы</button>
+
+
+                </section>
+
+                <button class="scroll-up"><a href="#top">&#8679</a></button>
+
+            </main>
+
+            <footer>
+                <section class="top-block">
+                    <div class="top-block-left-part">
+                        <div class="pre-title">актуально</div>
+                        <h3 class="top-block-black-title">Получайте полезные рассылки о путешествиях</h3>
                     </div>
-                    <div class="blog-card">
-                        <div class="blog-card-img">
-                            <img src="./images_trip/Rectangle 19 (1).jpg" alt="">
+                    <div class="top-block-right-part">
+                        <p class="top-block-text">Введите e-mail адрес</p>
+                        <div class="input-box">
+                            <input type="email" class="input-email" placeholder="name@domain.com" required>
+                            <button class="button-news">Подписаться на новости</button>
                         </div>
-                        <div class="blog-card-text">
-                            <h3>Как подготовиться к путешествию в одиночку?</h3>
-                            <p>Путешествие в одиночку. Скажете, что это скучно? Давайте поговорим об этом. В этой статье
-                                мы
-                                рассмотрим самые распространенные вопросы, трудности и предубеждения одиночного
-                                путешествия.</p>
-                            <div class="blog-card-info">
-                                <p class="date">05/05/23</p>
-                                <p class="reade">читать статью</p>
-                            </div>
-                        </div>
+                        <p class="top-block-text-info">подписываясь на новости, вы автоматически соглашаетесь с
+                            условиями
+                            обработки <br> персональных данных и правилами рекламных рассылок</p>
+
                     </div>
-                    <div class="blog-card">
-                        <div class="blog-card-img">
-                            <img src="./images_trip/Rectangle 19 (3).jpg" alt="">
+                </section>
+                <div class="footer-list-info">
+                    <div class="footer-column footer-company-info">
+                        <div class="footer-company-info-text">
+                            <h3>Компания "РумТибет"</h3>
+                            <p>Крупнейший российский сайт о путешествиях. Всевозможные обзоры, статьи, обсуждения,
+                                бронирование отелей и самолётов — всё это собрано в одном
+                                месте с удобным интерфейсом.</p>
                         </div>
-                        <div class="blog-card-text">
-                            <h3>Индия...летим?</h3>
-                            <p>Первая поездка в Индию, скорее всего, станет шоком даже для опытного путешественника.
-                                Чтобы
-                                смягчить столкновение
-                                с экзотикой этой страны, можно обратиться к опыту ее бывалых исследователей.</p>
-                            <div class="blog-card-info">
-                                <p class="date">09/06/23</p>
-                                <p class="reade">читать статью</p>
-                            </div>
+                        <div class="footer-company-info-emale" id="contacts">
+                            <p>info@domain.com</p>
+                            <p>+7 (123) 456-78-90</p>
+                        </div>
+                        <div class="footer-company-info-links">
+                            <img src="./images_trip/Vector.png" alt="">
+                            <img src="./images_trip/Vector (1).png" alt="">
+                            <img src="./images_trip/Vector (2).png" alt="">
+                            <img src="./images_trip/Vector (3).png" alt="">
                         </div>
                     </div>
-                </div>
-                <button class="black-button">Другие материалы</button>
+                    <div class="footer-column footer-list-services">
+                        <h3>Наши услуги</h3>
 
+                        <ul class="services">
+                            <li>Прогулки в горы летом</li>
+                            <li>Зимние походы в горы</li>
+                            <li>Посещение храмов в горах</li>
+                            <li>Экстремальные виды туризма</li>
+                            <li>Походы в джунглях Амазонии</li>
+                            <li>Поездка в Африку</li>
 
-            </section>
-         
-            <button class="scroll-up"><a href="#top">&#8679</a></button>
-
-        </main>
-     
-        <footer>
-            <section class="top-block">
-                <div class="top-block-left-part">
-                    <div class="pre-title">актуально</div>
-                    <h3 class="top-block-black-title">Получайте полезные рассылки о путешествиях</h3>
-                </div>
-                <div class="top-block-right-part">
-                    <p class="top-block-text">Введите e-mail адрес</p>
-                    <div class="input-box">
-                        <input type="email" class="input-email" placeholder="name@domain.com" required>
-                        <button class="button-news">Подписаться на новости</button>
+                        </ul>
                     </div>
-                    <p class="top-block-text-info">подписываясь на новости, вы автоматически соглашаетесь с условиями
-                        обработки <br> персональных данных и правилами рекламных рассылок</p>
+                    <div class="footer-column footer-list-important">
+                        <h3>Важно для путешествий</h3>
 
-                </div>
-            </section>
-            <div class="footer-list-info">
-                <div class="footer-column footer-company-info">
-                    <div class="footer-company-info-text">
-                        <h3>Компания "РумТибет"</h3>
-                        <p>Крупнейший российский сайт о путешествиях. Всевозможные обзоры, статьи, обсуждения,
-                            бронирование отелей и самолётов — всё это собрано в одном
-                            месте с удобным интерфейсом.</p>
+                        <ul class="services">
+                            <li>Как собрать в долгий поход?</li>
+                            <li>Жизненно важные предметы для похода</li>
+                            <li>Медицинская страховка, гарантии безопасности</li>
+                            <li>Если вы врач - загляните сюда</li>
+
+                        </ul>
                     </div>
-                    <div class="footer-company-info-emale" id="contacts">
-                        <p>info@domain.com</p>
-                        <p>+7 (123) 456-78-90</p>
-                    </div>
-                    <div class="footer-company-info-links">
-                        <img src="./images_trip/Vector.png" alt="">
-                        <img src="./images_trip/Vector (1).png" alt="">
-                        <img src="./images_trip/Vector (2).png" alt="">
-                        <img src="./images_trip/Vector (3).png" alt="">
-                    </div>
+
                 </div>
-                <div class="footer-column footer-list-services">
-                    <h3>Наши услуги</h3>
-
-                    <ul class="services">
-                        <li>Прогулки в горы летом</li>
-                        <li>Зимние походы в горы</li>
-                        <li>Посещение храмов в горах</li>
-                        <li>Экстремальные виды туризма</li>
-                        <li>Походы в джунглях Амазонии</li>
-                        <li>Поездка в Африку</li>
-
-                    </ul>
+                <div class="footer-bottom">
+                    <p>ИП Константиновский К.К. 2023</p>
+                    <p class="personal-info">Политика безопасности персональных данных</p>
                 </div>
-                <div class="footer-column footer-list-important">
-                    <h3>Важно для путешествий</h3>
+            </footer>
+        </div>
 
-                    <ul class="services">
-                        <li>Как собрать в долгий поход?</li>
-                        <li>Жизненно важные предметы для похода</li>
-                        <li>Медицинская страховка, гарантии безопасности</li>
-                        <li>Если вы врач - загляните сюда</li>
-
-                    </ul>
-                </div>
-
-            </div>
-            <div class="footer-bottom">
-                <p>ИП Константиновский К.К. 2023</p>
-                <p class="personal-info">Политика безопасности персональных данных</p>
-            </div>
-        </footer>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./main.js"></script>
-    <script src ="main-2.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./main.js"></script>
+        <script src="main-2.js"></script>
 
 </body>
 
